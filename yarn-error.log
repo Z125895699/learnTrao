@@ -1,0 +1,88 @@
+Arguments: 
+  /Users/zhangdashu/.nvm/versions/node/v14.18.1/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/zhangdashu/.nvm/versions/node/v14.18.1/bin:Downloads/flutter/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/zhangdashu/.nvm/versions/node/v14.18.1/bin:Downloads/flutter/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/zhangdashu/.cargo/bin:/Users/zhangdashu/.fig/bin
+
+Yarn version: 
+  1.22.11
+
+Node version: 
+  14.18.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@tarojs%2ftaro-swan: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141390:19)
+      at Object.onceWrapper (events.js:519:28)
+      at ClientRequest.emit (events.js:400:28)
+      at TLSSocket.emitRequestTimeout (_http_client.js:790:9)
+      at Object.onceWrapper (events.js:519:28)
+      at TLSSocket.emit (events.js:412:35)
+      at TLSSocket.Socket._onTimeout (net.js:495:8)
+      at listOnTimeout (internal/timers.js:557:17)
+      at processTimers (internal/timers.js:500:7)
+
+npm manifest: 
+  {
+    "name": "demo1",
+    "version": "1.0.0",
+    "private": true,
+    "description": "项目练习",
+    "scripts": {
+      "build:weapp": "taro build --type weapp",
+      "build:swan": "taro build --type swan",
+      "build:alipay": "taro build --type alipay",
+      "build:tt": "taro build --type tt",
+      "build:h5": "taro build --type h5",
+      "build:rn": "taro build --type rn",
+      "dev:weapp": "npm run build:weapp -- --watch",
+      "dev:swan": "npm run build:swan -- --watch",
+      "dev:alipay": "npm run build:alipay -- --watch",
+      "dev:tt": "npm run build:tt -- --watch",
+      "dev:h5": "npm run build:h5 -- --watch",
+      "dev:rn": "npm run build:rn -- --watch"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "@tarojs/components": "1.2.20",
+      "@tarojs/router": "1.2.20",
+      "@tarojs/taro": "1.2.20",
+      "@tarojs/taro-alipay": "1.2.20",
+      "@tarojs/taro-h5": "1.2.20",
+      "@tarojs/taro-swan": "1.2.20",
+      "@tarojs/taro-tt": "1.2.20",
+      "@tarojs/taro-weapp": "1.2.20",
+      "nervjs": "^1.3.9",
+      "nerv-devtools": "^1.3.9"
+    },
+    "devDependencies": {
+      "@types/react": "^16.4.6",
+      "@types/webpack-env": "^1.13.6",
+      "@tarojs/plugin-babel": "1.2.20",
+      "@tarojs/plugin-csso": "1.2.20",
+      "@tarojs/plugin-sass": "1.2.20",
+      "@tarojs/plugin-uglifyjs": "1.2.20",
+      "@tarojs/webpack-runner": "1.2.20",
+      "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-plugin-transform-decorators-legacy": "^1.3.4",
+      "babel-plugin-transform-jsx-stylesheet": "^0.6.5",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "babel-preset-env": "^1.6.1",
+      "babel-eslint": "^8.2.3",
+      "eslint": "^4.19.1",
+      "eslint-config-taro": "1.2.20",
+      "eslint-plugin-react": "^7.8.2",
+      "eslint-plugin-import": "^2.12.0",
+      "eslint-plugin-taro": "1.2.20"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
